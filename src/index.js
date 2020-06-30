@@ -39,7 +39,7 @@ function frame() {
   for (let y = 0; y < 32; y++) {
     for (let x = 0; x < 64; x++) {
       if (cpu.display[x + y * 64]) {
-        context.fillStyle = "green";
+        context.fillStyle = "white";
         context.fillRect(x, y, 1, 1);
       }
       
