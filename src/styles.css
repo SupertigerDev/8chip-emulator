@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+canvas {
+  background-color: black;
+}
+.information {
+  background-color: rgb(22, 22, 22);
+
+  overflow: hidden;
+}
+.title {
+  background-color: rgb(61, 61, 61);
+  padding: 3px;
+}
+.opcodes {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.op-list {
+  height: 180px;
+  overflow: auto;
+}
+.op {
+  white-space: pre;
+  padding: 3px;
+}
+.op:nth-child(even) {
+  background-color: rgb(54, 54, 54);
+}
+.op-list .opcode {
+  width: 63px;
+  display: inline-block;
+  margin-right: 10px;
+  color: orange;
+}
+.op.current {
+  background-color: rgb(0, 89, 255);
+}
+
+.op-list .name {
+  margin-right: 10px;
+  color: greenyellow;
+}
+.op-list .pc {
+  margin-right: 10px;
+  color: rgb(207, 207, 207);
+}
+.keyboard .row {
+  display: flex;
+}
+.keyboard .button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.377);
+  cursor: pointer;
+  user-select: none;
+  height: 40px;
+  margin: 1px;
+  width: 40px;
+  transform: 0.2s;
+
+}
+.keyboard .button:hover {
+  background-color: black;
+}
+.info {
+  flex-shrink: 0;
+  white-space: pre;
+}
+#romsArea {
+  background-color: rgb(46, 46, 46);
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  margin-left: 0;
+}
+.title-sub {
+  font-size: 20px;
+}
+.rom {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.1s;
+}
+.rom:hover {
+  opacity: 1;
+}
